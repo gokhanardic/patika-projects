@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 7em 0 0 0;
+    font-family: 'Gruppo';
+    font-size: 20px;
+}
+
+
+nav {
+    margin: 3em 9em 0 0;
+    border: 1px solid white;
+    border-radius: 1em;
+    float: right;
+    width: 8%;
+
+}
+
+main {
+    margin: 0 0 0 5em;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+main li {
+    list-style: none;
+    padding: 0 0 3em 0;
+}
+
+main a {
+    width: 100px;
+    height: 5px;
+    line-height: 5px;
+    border-radius: 1em;
+}
+
+footer {
+    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    opacity: 70%;
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 5px 15px 5px;
+}
+
+a:hover {
+    color: red;
+}
+
+input {
+    background: none;
+    border-bottom-right-radius: 2em;
+    border-width: 0 1px 1px 0;
+    padding: 10px;
+    border-color: white;
+    
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border-color: red;
+}
