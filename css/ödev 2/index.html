@@ -10,20 +10,49 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
-
-        header {
-            width: 100%;
-            display: block;
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
         }
+
         #user {
             border-radius: 50%;
-            width: 32px;
+            width: 34px;
+        }
+
+        ul {
+            height: 34px;
+            line-height: 34px;
         }
 
         ul li {
             list-style-type: none;
-            padding: 5px 10px;
+            padding: 0 5px;
             display: inline;
+        }
+
+        .li2 {
+            color: #5f6368;
+        }
+
+        .li3 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .li4 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            position: fixed;
+            right: 5px;
+            top: 0px;
         }
 
         svg {
@@ -32,8 +61,9 @@
         }
 
         input {
-            width: 561px;
-            height: 44px;
+            width: 447px;
+            height: 34px;
+            border-color: #eeeeee;
             border-radius: 2em;
             margin: auto;
             display: block;
@@ -45,13 +75,14 @@
 <body>
     <header>
         <ul>
-            <li> <a><img id="user"
+            <li class="li4"><a href="">Görseller</a></li>
+            <li class="li3"><a href="">Gmail</a></li>
+            <li class="li2"><span class="material-icons">apps</span></li>
+            <li class="li1"> <a><img id="user"
                         src="https://upload.wikimedia.org/wikipedia/commons/6/67/Vector_Face_wearing_Spectacles.png"></a>
             </li>
-            <li><span class="material-icons">apps</span></li>
-            <li><a href="">Gmail</a></li>
-            <li><a href="">Görseller</a></li>
         </ul>
+
     </header>
 
     <nav>
