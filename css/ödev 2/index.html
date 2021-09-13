@@ -56,17 +56,50 @@
         }
 
         svg {
+            padding-top: 5em;
+            padding-bottom: 0;
             margin: 5em auto;
+            margin-bottom: 2em;
             display: block;
         }
 
-        input {
-            width: 447px;
-            height: 34px;
-            border-color: #eeeeee;
+        input.search {
+            width: 584px;
+            height: 40px;
+            border: 1px solid #dfe1e5;
             border-radius: 2em;
             margin: auto;
             display: block;
+        }
+
+        input.search:hover {
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
+        }
+
+        input.search:focus {
+            outline: none;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
+        }
+
+        input.button {
+            padding: 10px 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            font-size: 14px;
+            margin: 2em 5px auto;
+            display: inline-block;
+            position: relative;
+            left: 120px;
+        }
+
+        input.button:hover {
+            border: 1px solid #dfe1e5;
+        }
+
+        .center {
+            width: 590px;
+            margin: auto;
         }
     </style>
 
@@ -84,8 +117,7 @@
         </ul>
 
     </header>
-
-    <nav>
+    <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="272" height="92">
             <path fill="#EA4335"
                 d="M115.75 47.18c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18C71.25 34.32 81.24 25 93.5 25s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44S80.99 39.2 80.99 47.18c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z" />
@@ -99,8 +131,12 @@
             <path fill="#4285F4"
                 d="M35.29 41.41V32H67c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C16.32 69.35.36 53.89.36 34.91.36 15.93 16.32.47 35.3.47c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65l-22.49.01z" />
         </svg>
-        <input type="text">
-    </nav>
+    </div>
+    <div class="center">
+        <input type="text" class="search">
+        <input type="button" class="button" value="Google'da Ara">
+        <input type="button" class="button" value="Kendimi Şanslı Hissediyorum">
+    </div>
 
 </body>
 
