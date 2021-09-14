@@ -5,26 +5,43 @@
     font-family: 'Arial',sans-serif;
 }
 
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 header {
     position: absolute;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 15px;
 }
 
 ul {
-    height: 34px;
-    position: fixed;
-    right: 5px;
-    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-ul li {
-    list-style-type: none;
-    padding: 0;
-    display: inline;
+li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+li a {
+    color: #212121;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
 
 .user {
@@ -32,62 +49,77 @@ ul li {
     width: 34px;
 }
 
-.menu {
+.material-icons {
     color: #5f6368;
 }
 
-li a {
-    color: black;
-    text-decoration: none;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 130px;
+    width: 582px;
 }
 
-li a:hover {
-    text-decoration: underline;
+.searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
 }
 
-svg {
-    padding-top: 5em;
-    padding-bottom: 0;
-    margin: 5em auto;
-    margin-bottom: 2em;
-    display: block;
-}
-
-input.search {
-    width: 584px;
-    height: 40px;
+.search {
+    width: 100%;
+    padding: 13px 73px 13px 58px;
+    border-radius: 30px;
     border: 1px solid #dfe1e5;
-    border-radius: 2em;
-    margin: auto;
-    display: block;
+    outline: none;
+    font-size: 16px;
 }
 
-input.search:hover {
+.search:hover {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
 }
 
-input.search:focus {
+.search:focus {
     outline: none;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.136);
 }
 
-input.button {
+.icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px 5px;
     padding: 10px 15px;
-    border: 1px solid white;
-    border-radius: 5px;
+    color: #3c4043;
     background-color: #f8f9fa;
     font-size: 14px;
-    margin: 2em 5px auto;
-    display: inline-block;
-    position: relative;
-    left: 120px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
 }
 
-input.button:hover {
-    border: 1px solid #dfe1e5;
+button:hover {
+    border: 1px solid #ccc;
+    color: black;
 }
 
-.center {
-    width: 590px;
-    margin: auto;
-}
+
+
+
